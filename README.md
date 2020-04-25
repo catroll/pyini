@@ -1,12 +1,12 @@
-<p align="center"><a href="https://gitlab.com/whoatemybutte7/pyini/"><img src="https://i.imgur.com/Ethz5E9.png" alt="McAutoServer" width="450"></a></p>
+<h1><a href="https://gitlab.com/whoatemybutte7/pyini/"><img src="https://i.imgur.com/Doy9cmm.png" alt="PyINI" width="70" height="70"></p> PyINI</a></h1>
 
 ## Python INI File Manipulator
 Forked from [https://github.com/PolyEdge/PyINI](https://github.com/PolyEdge/PyINI).
 
 [![Version: 1.0](https://img.shields.io/badge/version-1.0-brightgreen)](https://gitlab.com/whoatemybutte7/pyini/-/tags)
 [![License: GPLv3+](https://img.shields.io/badge/license-GPLv3+-blue)](https://gitlab.com/whoatemybutte7/pyini/-/blob/master/LICENSE)
-![Pylint: 10.0/10.0](https://img.shields.io/badge/pylint-10.0/10.10-red)
-![Dependencies: 0](https://img.shields.io/badge/dependencies-0-orange)
+[![Pylint: 10.0/10.0](https://img.shields.io/badge/pylint-10.0/10.10-red)]()
+[![Dependencies: 0](https://img.shields.io/badge/dependencies-0-orange)]()
 
 ## Table of Contents
 
