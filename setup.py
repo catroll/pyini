@@ -7,7 +7,7 @@ with open("README.md") as fh:
 	long_description = fh.read()
 
 setuptools.setup(
-	name="pyini",
+	name="PyINI",
 	version=pyini.__version__,
 	author="WhoAteMyButter",
 	description="INI data reader & writer",
@@ -16,6 +16,7 @@ setuptools.setup(
 	url="https://gitlab.com/whoatemybutter/pyini",
 	packages=setuptools.find_packages(),
 	classifiers=[
+		"Development Status :: 5 - Production/Stable",
 		"Programming Language :: Python :: 3",
 		"Programming Language :: Python :: 3 :: Only",
 		"Operating System :: OS Independent",

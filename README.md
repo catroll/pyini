@@ -34,7 +34,7 @@
 Once Python 3 is installed alongside [Pip](https://www.w3schools.com/python/python_pip.asp):
 
 ```bash
-python3 -m pip install pyini
+python3 -m pip install git+https://gitlab.com/whoatemybutter/pyini.git
 ```
 
 ## Support
