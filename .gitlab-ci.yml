@@ -1,0 +1,30 @@
+---
+image: "python:3.6"
+
+before_script:
+  - "python --version"
+
+stages:
+  - "Packaging - PyPi"
+  - "Packaging - GitLab"
+
+pypi:
+  allow_failure: true
+  cache: {}
+  script:
+    - "if [[ -z \"$TWINE_USERNAME\" || -z \"$TWINE_PASSWORD\" ]]; then exit; fi"
+    - "python -m pip install -U twine"
+    - "python setup.py sdist bdist_wheel"
+    - "python -m twine upload dist/*"
+  stage: "Packaging - PyPi"
+
+gitlab:
+  allow_failure: true
+  cache: {}
+  script:
+    - "if [[ -z \"$CI_JOB_TOKEN\" || -z \"CI_PROJECT_ID\" ]]; then exit; fi"
+    - "python -m pip install -U twine"
+    - "python setup.py sdist bdist_wheel"
+    - "TWINE_PASSWORD=${CI_JOB_TOKEN} TWINE_USERNAME=gitlab-ci-token"
+    - "python -m twine upload dist/* --repository-url https://gitlab.com/api/v4/projects/${CI_PROJECT_ID}/packages/pypi"
+  stage: "Packaging - GitLab"
